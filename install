@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
+set -e
 
-ln -sf ./tmux.conf "$HOME"/.tmux.conf && echo "Symlinked .tmux.conf"
+src="./tmux.conf"
+target=$HOME/.tmux.conf
+
+ln -svf $src $target
 
 if [ ! -d ~/.tmux/plugins/tpm/.git ]; then
     echo "Installing TPM"
