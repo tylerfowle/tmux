@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-src="./tmux.conf"
-target=$HOME/.tmux.conf
+src=$HOME/Repos/tmux/tmux.conf
+dst=$HOME/.tmux.conf
 
-ln -svf $src $target
+ln -svf "$src" "$dst"
 
 if [ ! -d ~/.tmux/plugins/tpm/.git ]; then
     echo "Installing TPM"
