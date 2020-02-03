@@ -20,6 +20,11 @@ cd tmux
 ## Usage
 
 
+###### Move pane to another session:
+
+1. Mark the source pane with `<prefix>m`
+2. Go to the destination window and `<prefix>w`
+3. Move the marked pane there with `<prefix>:join-pane`
 
 ## Plugins
 
@@ -42,3 +47,12 @@ Keybind | Action
 n | jumps upward (next)
 N | jumps downward (prev)
 Enter | copy selection
+
+
+### open
+open files and folders
+
+Keybind | Modes
+--------|------
+prefix + o | General open with default
+prefix + C-o | Scoped open in $EDITOR
