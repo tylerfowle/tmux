@@ -3,7 +3,14 @@ set -e
 
 src=$HOME/Repos/tmux/tmux.conf
 dst=$HOME/.tmux.conf
+ln -svf "$src" "$dst"
 
+src=$HOME/Repos/tmux/renew_env.sh
+dst=$HOME/.tmux/renew_env.sh
+ln -svf "$src" "$dst"
+
+src=$HOME/Repos/tmux/tmux.remote.conf
+dst=$HOME/.tmux/tmux.remote.conf
 ln -svf "$src" "$dst"
 
 if [ ! -d ~/.tmux/plugins/tpm/.git ]; then
