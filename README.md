@@ -19,12 +19,24 @@ cd tmux
 
 ## Usage
 
+###### Reorder panes in window:
+
+`prefix {` and `prefix }`
+
+###### Move pane to its own window:
+
+`prefix !`
+
+###### Move window to a pane of existing window:
+
+`prefix :` join-pane -s WINDOW
 
 ###### Move pane to another session:
 
 1. Mark the source pane with `<prefix>m`
 2. Go to the destination window and `<prefix>w`
 3. Move the marked pane there with `<prefix>:join-pane`
+
 
 ## Plugins
 
